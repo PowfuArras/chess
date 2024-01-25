@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chess</title>
+    <style>
+        html {
+            width: 100%;
+            height: 100%;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            background-color: #463120;
+            background-image: url('/assets/backgrounds/cirno_fumo_vrc.png');
+            background-size: cover; 
+            backdrop-filter: blur(1vmin);
+            overflow: hidden;
+        }
+
+        /*.chessboard {
+            opacity: 90%;
+            display: grid;
+            grid-template-columns: repeat(8, 1fr);
+            grid-template-rows: repeat(8, 1fr);
+            width: 80vmin;
+            height: 80vmin;
+        }
+
+        .chessboard>div {
+            width: 100%;
+            height: 100%;
+            background-size: contain;
+        }*/
+
+        canvas {
+            image-rendering: pixelated;
+            image-rendering: crisp-edges;
+        }
+
+        .config {
+            position: absolute;
+            top: 0;
+            left: 0;
+            color: white;
+            padding: 4px;
+            background-color: #FFFFFFAA;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="config">
+        <span>Enable Move Lines</span>
+        <input type="checkbox" id="move-lines-option">
+    </div>
+    <script src="./javascript/index.js"></script>
+</body>
+
+</html>
